@@ -46,5 +46,23 @@ $(document).ready(function() {
     current = arrayStudents[i]
     console.log(current);
   }
+  // chiedo all'utente un nome e un cognome e un età, creo un nuovo oggetto studente e lo pusho dentro l'array
+  var name = prompt('inserisci un nome')
+
+  var surname = prompt('inserisci un cognome')
+
+  var age = prompt('inserisci l"età')
+
+  var newStudent = {
+    'nome': name,
+    'cognome': surname,
+    'eta': age
+  };
+
+  console.log(newStudent);
+
+  arrayStudents.push(newStudent)
+
+  console.log(arrayStudents);
 
 })
