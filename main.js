@@ -12,12 +12,39 @@ $(document).ready(function() {
   };
 
   // console.log(student['nome']);
-
+  // uso un ciclo for per stampare le caratteristiche dell'oggetto
   for (var key in student) {
     console.log(key);
 
     console.log(student[key]);
   }
 
+
+  var arrayStudents = [
+
+    {
+      'nome': 'pippo',
+      'cognome': 'rossi',
+      'eta': '30'
+    },
+
+    {
+      'nome': 'paperino',
+      'cognome': 'verdi',
+      'eta': '20'
+    },
+
+    {
+      'nome': 'pluto',
+      'cognome': 'bianchi',
+      'eta': '27'
+    }
+
+  ]
+  // creo un ciclo for per scorrere gli elementi dell'array
+  for (var i = 0; i < arrayStudents.length; i++) {
+    current = arrayStudents[i]
+    console.log(current);
+  }
 
 })
