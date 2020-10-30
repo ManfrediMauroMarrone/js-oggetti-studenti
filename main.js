@@ -4,15 +4,20 @@
 // tramite 3 prompt, chiedere all'utente il nome, il cognome e l'età di un nuovo studente.
 // Creare con questi dati un nuovo oggetto e inserirlo nell'array del punto precedente.
 $(document).ready(function() {
-
+  // creo un oggetto studente caratterizzato da nome, cognome ed età
   var student = {
     'nome': 'pippo',
     'cognome': 'rossi',
     'eta': '30'
   };
 
-  console.log(student['nome']);
+  // console.log(student['nome']);
 
+  for (var key in student) {
+    console.log(key);
+
+    console.log(student[key]);
+  }
 
 
 })
